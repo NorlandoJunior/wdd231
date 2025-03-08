@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    .parent {
+        grid-template-columns: 1fr;
+    }
+
+    .corse-work,
+    .local,
+    .course-certificate {
+        grid-column: span 1; 
+        grid-row: auto; 
+    }
+    
+    .corse-work h2, 
+    .local h2,
+    .course-certificate h2 {
+        padding: 15px;
+    }
+
+    ul {
+        padding: 5px;
+    }
+}

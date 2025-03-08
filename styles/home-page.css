@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav { 
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 15px;  
+    padding: 10px 20px; 
+}
+
+
+nav ul li {
+    padding: 10px;
+    border-radius: 5px; 
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: block;
+}
+
+nav ul li:hover {
+    background-color: #666; 
+}
+
+#menu-button {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.course-btn {
+    border: none;
+    background-color: red; 
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+button.course-btn.completed {
+    background-color: green;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto; 
+    gap: 8px;
+    max-width: 1200px; 
+    margin: auto; 
+    padding: 20px;
+}
+
+.corse-work {
+    border: solid black;
+    border-radius: 25px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+}
+
+.corse-work h2 {
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 30px;
+    margin: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.corse-work ul {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+    
+
+.local {
+    border: solid black;
+    border-radius: 25px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 4;
+}
+
+.local h2 {
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 30px;
+    margin: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.local img {
+    padding: 10px;
+}
+
+
+.course-certificate {
+    border: solid black;
+    border-radius: 25px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    grid-column: span 5 / span 5;
+    grid-row: span 4 / span 4;
+    grid-row-start: 5;
+}
+
+.course-certificate h2 {
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 30px;
+    margin: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.course-certificate ul {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+label {
+    padding: 10px;
+    text-decoration: left;
+}
+
+p {
+  text-align: center;
+}
