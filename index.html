@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal WDD231 Website">
     <meta name="author" content="Norlando Santos Barbosa Junior">
-    <title>WDD231 Web Page</title>
+    <title>wdd231 home page</title>
     <link rel="stylesheet" href="styles/home-page.css">
     <link rel="stylesheet" href="styles/home-page-mobile.css">
     <script src="scripts/navigation.js" defer></script>
@@ -28,48 +28,52 @@
 </header>
 
 <main>
-    <h1>Home</h1>
+
+    <h1>Welcome to Norlando Santos Barbosa Junior's Personal Page</h1>
 
     <div class="parent">
 
-     <div class="corse-work">
-        <h2>Course Work</h2>
-        <Ul>
-            <li>Week01</li>
-            <li>Week02</li>
-            <li>Week03</li>
-            <li>Week04</li>
-            <li>Week05</li>
-            <li>Week06</li>
-            <li>Week07</li>
-        </Ul>
-     </div>
+        <section class="course-work">
+            <h2>Course Work</h2>
+            <ul>
+                <li>Week01</li>
+                <li>Week02</li>
+                <li>Week03</li>
+                <li>Week04</li>
+                <li>Week05</li>
+                <li>Week06</li>
+                <li>Week07</li>
+            </ul>
+        </section>
 
-     <div class="local">
-        <h2>Brazil, São Paulo</h2>
-        <picture>
-        <source srcset="images/são-paulo-medium-image.webp" media="(min-width:700px)">
-        <source srcset="images/são-paulo-small-image.webp" media="(min-width:500px)">
-        <img src="images/são-paulo-big-image.webp" width="200" alt="Your Photo" loading="lazy">
-        <p>Brazil, São Paulo<p>
-        </picture>
-     </div>
+        <section class="local">
+            <h2>Brazil, São Paulo</h2>
+            <picture>
+                <source srcset="images/são-paulo-medium-image.webp" media="(min-width:700px)">
+                <source srcset="images/são-paulo-small-image.webp" media="(min-width:500px)">
+                <img src="images/são-paulo-big-image.webp" width="200" alt="Your Photo" loading="lazy">
+            </picture>
+            <p>Brazil, São Paulo</p>
+        </section>
 
-     <div class="course-certificate ">
-        <h2>Web and Computer Programing Certificate</h2>
-        <label for="filter">Filter Courses:</label>
-     <select id="filter">
-        <option value="all">All</option>
-        <option value="completed">Completed</option>
-        <option value="incomplete">Incomplete</option>
-     </select>
-    
-     <ul id="course-list"></ul>
+        <section class="course-certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <label for="filter">Filter Courses:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
 
-     <script src="scripts/navigation.js"></script>
-     </div>
+            <ul id="course-list"></ul>
+
+            <script src="scripts/navigation.js"></script>
+        </section>
+
     </div>
+
 </main>
+
 <footer>
     <p>&copy; <span id="year"></span> Norlando Santos Barbosa Junior - Brazil</p>
     <p id="lastModified"></p>
