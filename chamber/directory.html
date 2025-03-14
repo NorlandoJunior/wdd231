@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory of businesses in [Your City/Region] Chamber of Commerce.">
+    <meta name="author" content="Norlando Santos Barbosa Junior">
+
+    <meta property="og:title" content="Chamber of Commerce - Business Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourgithubpage.com/chamber/images/preview.jpg">
+    <meta property="og:url" content="https://yourgithubpage.com/chamber/directory.html">
+
+    <title>Business Directory | Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+</head>
+<body>
+
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <button id="toggle-view">Toggle View</button>
+        <section id="members-container" class="grid-view"></section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Chamber of Commerce</p>
+        <p>Last Updated: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="script/directory.js"></script>
+    <script src="script/footer.js"></script>
+
+</body>
+</html>
