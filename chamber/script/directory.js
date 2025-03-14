@@ -1,13 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
     const membersContainer = document.querySelector("#members-container");
-    const toggleButton = document.querySelector("#toggle-view");
-
-    let isGridView = true;
+    const gridButton = document.querySelector("#grid");
+    const listButton = document.querySelector("#list");
 
     async function getMembers() {
         try {
             const response = await fetch("data/members.json");
+            if (!response.ok) throw new Error("Failed to load JSON");
             const members = await response.json();
+            console.log("JSON Loaded:", members);
             displayMembers(members);
         } catch (error) {
             console.error("Error fetching data:", error);
@@ -15,10 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function displayMembers(members) {
-        membersContainer.innerHTML = ""; 
+        membersContainer.innerHTML = "";
         members.forEach(member => {
             const memberElement = document.createElement("div");
-            memberElement.classList.add("member", isGridView ? "grid-item" : "list-item");
+            memberElement.classList.add("member");
 
             memberElement.innerHTML = `
                 <img src="images/${member.image}" alt="${member.name}">
@@ -29,14 +30,20 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
             membersContainer.appendChild(memberElement);
         });
+
+        console.log("Members displayed:", membersContainer.innerHTML); 
     }
 
-    toggleButton.addEventListener("click", () => {
-        isGridView = !isGridView;
-        membersContainer.classList.toggle("grid-view", isGridView);
-        membersContainer.classList.toggle("list-view", !isGridView);
-        getMembers();
+ 
+    gridButton?.addEventListener("click", () => {
+        membersContainer.classList.add("grid-view");
+        membersContainer.classList.remove("list-view");
     });
 
-    getMembers();
+    listButton?.addEventListener("click", () => {
+        membersContainer.classList.add("list-view");
+        membersContainer.classList.remove("grid-view");
+    });
+
+    await getMembers();
 });
