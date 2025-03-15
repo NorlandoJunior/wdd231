@@ -12,6 +12,64 @@ header {
     text-align: center;
 }
 
+h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #menu.active {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
+
 nav ul {
     list-style: none;
     padding: 0;
