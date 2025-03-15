@@ -1,7 +1,7 @@
 [
     {
       "name": "White Water Rafting",
-      "address": "Yellowstone National Park, United State",
+      "address": "Yellowstone National Park, United States",
       "phone": "+1 (425) 555-0100",
       "website": "https://norlandojunior.github.io/wdd130/wwr/about.html",
       "image": "rafting_medium.jpg",
@@ -14,6 +14,46 @@
       "website": "https://mountainoutfitters.com",
       "image": "mountain_outfitter.webp",
       "membership": 2
+    },
+    {
+      "name": "City Tech Solutions",
+      "address": "101 Innovation Drive, São Paulo, Brazil",
+      "phone": "+55 (11) 4002-8922",
+      "website": "https://citytechsolutions.com.br",
+      "image": "city_tech.webp",
+      "membership": 1
+    },
+    {
+      "name": "Eco Green Landscaping",
+      "address": "789 Eco Rd, Green Valley",
+      "phone": "+1 (425) 123-4567",
+      "website": "https://ecogreenlandscaping.com",
+      "image": "eco_green.webp",
+      "membership": 2
+    },
+    {
+      "name": "Gourmet Delights",
+      "address": "22 Culinary St, New York, USA",
+      "phone": "+1 (212) 555-7890",
+      "website": "https://gourmetdelights.com",
+      "image": "gourmet_delights.webp",
+      "membership": 3
+    },
+    {
+      "name": "Fitness Pro Gym",
+      "address": "900 Wellness Ave, Los Angeles, USA",
+      "phone": "+1 (310) 555-2020",
+      "website": "https://fitnessprogym.com",
+      "image": "fitness_pro.webp",
+      "membership": 1
+    },
+    {
+      "name": "Digital Marketing Experts",
+      "address": "1500 SEO Blvd, San Francisco, USA",
+      "phone": "+1 (415) 555-3030",
+      "website": "https://dmexperts.com",
+      "image": "digital_marketing.webp",
+      "membership": 2
     }
-  ]
+]
   
