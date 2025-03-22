@@ -192,15 +192,15 @@ h2 {
 .hero-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem cubra toda a área sem distorcer */
+    object-fit: cover; 
 }
 
 .hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centraliza o texto no meio da imagem */
-    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para melhorar a legibilidade */
+    transform: translate(-50%, -50%); 
+    background: rgba(0, 0, 0, 0.6); 
     color: white;
     padding: 20px;
     text-align: center;
@@ -211,7 +211,7 @@ h2 {
 
 .cta-button {
     display: inline-block;
-    background-color: #ff9800; /* Cor chamativa */
+    background-color: #ff9800;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -267,6 +267,7 @@ h2 {
 .weather {
     padding: 20px;
     background-color:#004080;
+    color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -284,10 +285,11 @@ h2 {
 }
 
 .forecast-day {
+    color: white;
     display: inline-block;
     margin: 10px;
     padding: 15px;
-    background: white;
+    background: #004080;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -315,27 +317,31 @@ h2 {
 }
 
 #spotlight-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
     padding: 20px;
-    margin-top: 20px;
+    justify-content: center;
 }
 
 .spotlight-member {
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 300px;
+    text-align: center;
 }
 
-.spotlight-member-image {
+.spotlight-member img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin-right: 20px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .spotlight-member-info h3 {
@@ -345,4 +351,11 @@ h2 {
 
 .spotlight-member-info p {
     margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+    #spotlight-container {
+        grid-template-columns: 1fr;
+    }
 }
