@@ -2,7 +2,7 @@ const apiKey = '875451d8067570f7f358fba44723c498';
 const urlCurrentWeather = `https://api.openweathermap.org/data/2.5/weather?lat=-23.55&lon=-46.63&appid=${apiKey}&units=metric`;
 const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=-23.55&lon=-46.63&appid=${apiKey}&units=metric`;
 
-// Função para obter o clima atual
+
 async function getWeather() {
   try {
     const response = await fetch(urlCurrentWeather);

@@ -20,7 +20,7 @@ async function getSpotlightMembers() {
             business: "Oliveira Café",
             description: "A cozy café offering specialty coffee and homemade pastries.",
             imageUrl: "https://example.com/images/spotlight-member2.jpg",
-            address: "507 Rua dos Padeiros, São Paulo, SP"
+            address: "507   Rua dos Padeiros, São Paulo, SP"
         }
     ];
 
