@@ -14,7 +14,9 @@
     <title>Business Directory | Chamber of Commerce</title>
     <link rel="icon" href="images/favicon-chamber.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/chamber.css">
+
 </head>
+
 <body>
 
     <header>
@@ -28,22 +30,52 @@
         </ul>
     </header>
 
-    <h1>OpenWeatherMap.org API Test</h1>
+    
+    <section class="hero">
+        <img src="images/hero-image-chamber.webp" alt="Chamber of Commerce" class="hero-image">
+        <div class="hero-text">
+            <h1>Welcome to São Paulo Chamber of Commerce</h1>
+            <p>Connecting businesses and creating opportunities</p>
+            <a href="join.html" class="cta-button">Join Now</a>
+        </div>
+    </section>
+
     <main>
-      <p>The current temperature in Trier, Germany is C° <span id="current-temp"></span></p>
-      <figure>
-        <img id="weather-icon" src="" alt="">
-        <figcaption></figcaption>
-      </figure>
+        
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <p>The current temperature in São Paulo is <span id="current-temp"></span>°C</p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption id="weather-desc"></figcaption>
+            </figure>
+        </section>
+
+        <section id="forecast">
+          <h2>3-Day Weather Forecast</h2>
+        </section>
+
+       <section class="events">
+        <h2>Current Events</h2>
+        <ul id="events-list"></ul>
+       </section>
+ 
+        <section id="spotlight">
+          <h2>Member Spotlight</h2>
+          <div id="spotlight-container"></div>
+      </section>
+      
     </main>
+
     <footer>
-      Norlando Junior | OpenWeatherMap.org | CC BY-SA 4.0
+      <p>&copy; <span id="year"></span> | Chamber of Commerce</p>
+      <p>Last Updated: <span id="last-modified"></span></p>
     </footer>
 
     <script src="scripts/directory.js"></script>
     <script src="scripts/footer.js"></script>
     <script src="scripts/current-temp.js"></script>
-    
-
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/events.js"></script>
 </body>
 </html>
