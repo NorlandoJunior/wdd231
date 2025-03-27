@@ -1,0 +1,19 @@
+------------------------------------------------------------
+
+Project Subject: The web site is about a restaurant and 
+haved information about location,
+resources and a simple Menu.
+
+--------------------------------------------------------------
+
+Project Description: The web site provides small information
+about a fictitious restaurant. I'm go create a simple menu 
+for this project and add other features like image, navigation,
+modals (in the menu). Additional functions can be added in the future.
+
+--------------------------------------------------------------
+
+Project Reason and Purpose: The reason for this project is to
+improve my skiils in web design and javaScript, create a
+functional portifolio, and prove to myself what I can solve 
+a real-word problems.
