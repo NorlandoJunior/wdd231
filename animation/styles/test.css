@@ -1,0 +1,29 @@
+/* Estilos iniciais para a página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilo do quadrado */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    /* Aplicando a animação */
+    animation: slide 3s ease-in-out infinite;
+}
+
+/* Definindo a animação "slide" */
+@keyframes slide {
+    from {
+        transform: translateX(-400px); /* Começa fora da tela, à esquerda */
+    }
+    to {
+        transform: translateX(500px); /* Vai para a direita, 300px */
+    }
+}
