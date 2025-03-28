@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/chamber.css">
+</head>
+<body>
+    <header>
+        <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="about.html">About</a></li> 
+            <li><a href="join.html">Services</a></li> 
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h1>Join the Chamber of Commerce</h1>
+        <form action="thankyou.html" method="get">
+            <label>First Name:
+                <input type="text" name="first-name" required autocomplete="given-name" title="Enter your first name">
+            </label>
+            <label>Last Name:
+                <input type="text" name="last-name" required autocomplete="family-name" title="Enter your last name">
+            </label>
+            <label>Organizational Title:
+                <input type="text" name="organization-title" pattern="[A-Za-z\- ]{7,}" title="At least 7 characters, letters, hyphens, and spaces only" autocomplete="organization-title">
+            </label>
+            <label>Email:
+                <input type="email" name="email" required autocomplete="email" placeholder="example@domain.com">
+            </label>
+            <label>Mobile Phone:
+                <input type="tel" name="phone" required autocomplete="tel">
+            </label>
+            <label>Business/Organization Name:
+                <input type="text" name="organization" required autocomplete="organization">
+            </label>
+            <label>Membership Level:
+                <select name="membership-level">
+                    <option value="np">NP Membership (Non-Profit, Free)</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </label>
+            <label>Business Description:
+                <textarea name="description" title="Describe your business"></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Chamber of Commerce</p>
+    </footer>
+
+    <script>
+        document.getElementById('timestamp').value = new Date().toISOString();
+    </script>
+</body>
+</html>

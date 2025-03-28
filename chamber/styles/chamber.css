@@ -16,27 +16,6 @@ h1 {
     text-align: center;
 }
 
-
-.box {
-    width: 100px;
-    height: 100px;
-    background-color: #3498db;
-    /* Aplicando a animação */
-    animation: slide 3s ease-in-out infinite;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
-
-
-
 nav {
     display: flex;
     align-items: center;
