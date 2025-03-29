@@ -59,11 +59,13 @@
             
             <label for="membership-level">Membership Level:</label>
             <select name="membership-level" id="membership-level" required>
+                <option value="" disabled selected>Select a membership level</option>
                 <option value="np">NP Membership (Non-Profit, Free)</option>
                 <option value="bronze">Bronze</option>
                 <option value="silver">Silver</option>
                 <option value="gold">Gold</option>
             </select>
+            
             
             <label for="description">Business Description:</label>
             <textarea name="description" id="description" title="Describe your business" aria-label="Business Description"></textarea>
