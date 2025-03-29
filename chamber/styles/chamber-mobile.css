@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+    #menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #menu.active {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    #spotlight-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
