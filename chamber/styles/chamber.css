@@ -181,6 +181,8 @@ footer {
 }
 
 h2 {
+    font-size: 2rem;
+    color: #004080;
     text-align: center;
 }
 
@@ -523,4 +525,52 @@ button:hover {
 .card {
     opacity: 0; /* Começa invisível */
     animation: fadeInUp 0.5s ease-out forwards;
+}
+
+
+/*Thankyou page*/
+@media screen and (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Summary List */
+ul#summary {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+ul#summary li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+ul#summary li:last-child {
+    border-bottom: none;
+}
+
+ul#summary strong {
+    color: #004080;
 }
