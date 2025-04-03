@@ -1,0 +1,42 @@
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: rgb(235, 235, 235);
+}
+
+header {
+ background-color: rgb(143, 95, 0);
+ padding: 10px;
+ border-radius: 1rem;
+ color: white;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.primary-color {
+   color: rgb(143, 95, 0);
+}
+
+.secondary-color {
+    color: rgb(0, 0, 0);
+}
+
+img {
+    width: auto;
+    height: 500px;
+}
+
+footer {
+    background-color: rgb(143, 95, 0);
+    padding: 10px;
+    border-radius: 1rem;
+    color: white;
+   
+   }
