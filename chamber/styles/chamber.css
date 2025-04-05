@@ -19,7 +19,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #004080;
+    background-color: #ffffff;
     padding: 10px;
     border: none; 
     outline: none;
@@ -34,6 +34,7 @@ nav {
 #menu li {
     display: inline;
 }
+
 
 #menu a {
     text-decoration: none;
