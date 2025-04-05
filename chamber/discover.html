@@ -8,37 +8,36 @@
 
     <meta property="og:title" content="Chamber of Commerce - Business Directory">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://yourgithubpage.com/chamber/images/preview.jpg">
-    <meta property="og:url" content="https://yourgithubpage.com/chamber/directory.html">
+    <meta property="og:image" content="https://raw.githubusercontent.com/NorlandoJunior/wdd231/main/chamber/images/hero-image-chamber.webp">
+    <meta property="og:url" content="https://norlandojunior.github.io/wdd231/chamber/discover.html">
 
     <title>Business Directory | Chamber of Commerce</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon-chamber.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-mobile.css">
 </head>
+
 <body>
 
     <header>
-            <button id="menu-toggle" aria-label="Toggle menu">☰</button>
-            <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="about.html">About</a></li> 
-                <li><a href="join.html">Join</a></li> 
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li> 
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
     </header>
 
-    <main>
-        <h1>Business Directory</h1>
+    <main class="discovery-container">
+        <aside class="visit-message" id="visit-message"></aside>
+      
+        <section class="card-grid">
+          <!-- Cards generates by JS -->
+        </section>
+      </main>
+      
 
-        <div class="view-buttons">
-            <button id="grid">Grid View</button>
-            <button id="list">List View</button>
-        </div>
-        
-        <section id="members-container" class="grid-view"></section>
-    </main>
 
     <footer>
         <p>&copy; <span id="year"></span> Norlando Santos Barbosa Junior - Brazil</p>
@@ -53,6 +52,8 @@
     <script src="scripts/modal.js"></script>
     <script src="scripts/animation"></script>
     <script src="scripts/menu-toggle.js"></script>
+    <script src="scripts/discover.js"></script>
+    
 
 </body>
 </html>

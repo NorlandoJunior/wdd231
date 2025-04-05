@@ -491,7 +491,7 @@ button:hover {
     }
 }
 
-.card {
+.membership {
     opacity: 0; /* Começa invisível */
     animation: fadeInUp 0.5s ease-out forwards;
 }
@@ -526,3 +526,126 @@ ul#summary li:last-child {
 ul#summary strong {
     color: #004080;
 }
+
+/*Discover css*/
+.discovery-container {
+  display: grid;
+  grid-template-areas:
+    "visit"
+    "cards";
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.visit-message {
+  grid-area: visit;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.card-grid {
+  grid-area: cards;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #cf7c00e2;
+  }
+
+  /*Adjustment image size*/
+
+  .card-grid {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 1rem;
+  }
+
+  .card {
+    max-width: 250px;
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .card-grid {
+      grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    }
+  }
+  
+ 
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .card-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+    }
+  }
+  
+  
+  @media (min-width: 1025px) {
+    .card-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-areas: none;
+    }
+  }
+
+  .card1 { grid-area: card1; }
+  .card2 { grid-area: card2; }
+  .card3 { grid-area: card3; }
+  .card4 { grid-area: card4; }
+  .card5 { grid-area: card5; }
+  .card6 { grid-area: card6; }
+  .card7 { grid-area: card7; }
+  .card8 { grid-area: card8; }

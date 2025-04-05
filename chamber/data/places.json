@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Park Ibirapuera",
+    "address": "Av. Pedro Álvares Cabral - Vila Mariana, São Paulo - SP",
+    "description": "One of the largest urban parks in Latin America.",
+    "image": "images/ibirapuera-park.webp",
+    "link": "https://www.parquedoibirapuera.org/"
+  },
+  {
+    "name": "Municipal Market of São Paulo (Mercadão)",
+    "address": "R. Cantareira, 306 - Centro Histórico de São Paulo, São Paulo - SP",
+    "description": "A traditional market famous for its gourmet food, exotic fruits, and the iconic mortadella sandwich.",
+    "image": "images/hero-image-chamber.webp",
+    "link": "https://www.mercadomunicipalsp.com"
+  },
+  {
+    "name": "São Paulo Cathedral",
+    "address": "Praça da Sé - Sé, São Paulo - SP",
+    "description": "One of the largest neo-Gothic cathedrals in the world, located in the historical heart of the city.",
+    "image": "images/sao-paulo-cathedral.webp",
+    "link": "https://memorialdaresistenciasp.org.br/lugares/catedral-metropolitana-nossa-senhora-da-assuncao-de-sao-paulo-catedral-da-se/"
+  },
+  {
+    "name": "Batman Alley",
+    "address": "R. Gonçalo Afonso - Vila Madalena, São Paulo - SP",
+    "description": "A vibrant open-air street art gallery filled with colorful graffiti by local and international artists.",
+    "image": "images/batman-alley.webp",
+    "link": "https://viagemeturismo.abril.com.br/brasil/beco-do-batman-arte-cultura-historia-num-bairro-boemio-paulistano"
+  },
+  {
+    "name": "Itaú Cultural Institute",
+    "address": "Av. Paulista, 149 - Bela Vista, São Paulo - SP",
+    "description": "A cultural center offering exhibitions, shows, and workshops that promote Brazilian art and history.",
+    "image": "images/itau-cultural-institute.webp",
+    "link": "https://www.itaucultural.org.br"
+  },
+  {
+    "name": "Museum of the Portuguese Language",
+    "address": "Praça da Luz, s/n - Luz, São Paulo - SP",
+    "description": "A modern museum dedicated to the Portuguese language, with interactive and immersive exhibits.",
+    "image": "images/museu-of-the-portuguese-language.webp",
+    "link": "https://www.museudalinguaportuguesa.org.br"
+  },
+  {
+    "name": "Liberdade District",
+    "address": "Praça da Liberdade - Liberdade, São Paulo - SP",
+    "description": "A unique neighborhood known for its strong Japanese and Asian cultural influence, shops, and cuisine.",
+    "image": "images/liberdade-district.webp",
+    "link": "https://vejasp.abril.com.br/cultura-lazer/guia-liberdade-sp/"
+  },
+  {
+    "name": "São Paulo Museum of Art (MASP)",
+    "address": "Av. Paulista, 1578 - Bela Vista, São Paulo - SP",
+    "description": "A landmark museum with a remarkable collection of Western art and iconic modern architecture.",
+    "image": "images/masp-museum.webp",
+    "link": "https://masp.org.br"
+  }
+]
