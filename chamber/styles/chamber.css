@@ -15,11 +15,12 @@ h1 {
     text-align: center;
 }
 
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffffff;
+    background-color: #004080;
     padding: 10px;
     border: none; 
     outline: none;
@@ -34,6 +35,7 @@ nav {
 #menu li {
     display: inline;
 }
+
 
 
 #menu a {
@@ -532,11 +534,19 @@ ul#summary strong {
 .discovery-container {
   display: grid;
   grid-template-areas:
+    "title"
     "visit"
     "cards";
   gap: 1rem;
   padding: 1rem;
 }
+
+.page-title {
+    grid-area: title;
+    text-align: center;
+    color: #004080;
+    font-size: 2rem;
+  }
 
 .visit-message {
   grid-area: visit;
