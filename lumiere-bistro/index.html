@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Lumière Bistro | Home</title>
+  <meta name="description" content="Discover Lumière Bistro — a cozy and unique restaurant where flavor meets elegance." />
+  <meta name="author" content="Norlando Junior">
+
+  <!-- Social Media Meta -->
+  <meta property="og:title" content="Lumière Bistro">
+  <meta property="og:description" content="A cozy and unique restaurant where flavor meets elegance." />
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="https://norlando.github.io/wdd231/lumiere-bistro/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/lumiere-mobile.css">
+  <link rel="stylesheet" href="styles/lumiere.css">
+
+  <!-- JavaScript -->
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Lumière Bistro</div>
+      <button id="menu-toggle" aria-label="Open Menu">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="location.html">Location</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Welcome to Lumière Bistro</h1>
+        <p>A perfect place to relax and enjoy exclusive cuisine with friends and family.</p>
+        <a href="menu.html" class="cta-button">View Menu</a>
+      </div>
+      <div class="hero-img">
+        <img src="images/restaurant-hero.jpg" alt="Inside Lumière Bistro" loading="lazy" />
+      </div>
+    </section>
+
+    <div id="welcome-msg" class="about"></div>
+
+    <!-- About Section -->
+    <section class="about">
+      <h2>About Us</h2>
+      <p>Lumière Bistro offers a unique and intimate dining experience, combining flavorful dishes with a charming atmosphere. Whether you're looking for a romantic dinner or a cozy night out with friends, Lumière is the place to be.</p>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights">
+      <h2>Why Choose Us?</h2>
+      <div class="highlight-cards">
+        <div class="card">
+          <h3>Unique Flavors</h3>
+          <p>Our menu features dishes inspired by international cuisine, made with love and creativity.</p>
+        </div>
+        <div class="card">
+          <h3>Cozy Ambience</h3>
+          <p>Warm lighting, curated music, and comfortable seating make every moment special.</p>
+        </div>
+        <div class="card">
+          <h3>Perfect for Gatherings</h3>
+          <p>Whether it's a casual night or a celebration, our space is perfect for every occasion.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Lumière Bistro | <a href="attributions.html">Attributions</a></p>
+  </footer>
+  
+  <script src="scripts/main.js" type="module"></script>
+
+</body>
+</html>

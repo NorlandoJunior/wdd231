@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Truffle Risotto",
+    "description": "Creamy risotto with truffle oil and mushrooms.",
+    "price": "$18.99",
+    "image": "images/truffle-risotto.webp"
+  },
+  {
+    "name": "Duck Confit",
+    "description": "Slow-cooked duck leg served with potatoes.",
+    "price": "$24.50",
+    "image": "images/truffle-risotto.webp"
+  },
+  {
+      "name": "Coq au Vin",
+      "description": "Classic French chicken braised in red wine with mushrooms and pearl onions.",
+      "price": "21.90",
+      "image": "images/truffle-risotto.webp"
+  },
+  {
+      "name": "Bouillabaisse",
+      "description": "Traditional Provençal seafood stew with saffron and herbs.",
+      "price": "26.75",
+      "image": "images/truffle-risotto.webp"
+  },
+  {
+      "name": "Beef Bourguignon",
+      "description": "Tender beef slow-cooked in red wine with vegetables.",
+      "price": "23.50",
+      "image": "images/truffle-risotto.webp"
+  },
+  {
+      "name": "Ratatouille",
+      "description": "Vegetable medley baked with herbs and tomato sauce.",
+      "price": "16.40",
+      "image": "images/truffle-risotto.webp"
+  },
+  {
+      "name": "Lobster Thermidor",
+      "description": "Lobster meat in a creamy wine sauce, baked with cheese.",
+      "price": "34.00",
+      "image": "images/truffle-risotto.webp"
+  },
+  {
+      "name": "Filet Mignon au Poivre",
+      "description": "Pepper-crusted filet mignon with a cognac cream sauce.",
+      "price": "29.90",
+      "image": "images/truffle-risotto.webp"
+  },
+  {
+      "name": "Salmon en Papillote",
+      "description": "Salmon baked in parchment with lemon and herbs.",
+      "price": "22.30",
+      "image": "images/truffle-risotto.webp"
+  }
+]
