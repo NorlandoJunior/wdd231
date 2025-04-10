@@ -27,22 +27,22 @@
   <link rel="stylesheet" href="styles/lumiere-mobile.css">
   <link rel="stylesheet" href="styles/lumiere.css">
 
-  <!-- JavaScript -->
-  <script type="module" src="scripts/main.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Lumière Bistro</div>
-      <button id="menu-toggle" aria-label="Open Menu">☰</button>
-      <ul id="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="location.html">Location</a></li>
-      </ul>
-    </nav>
-  </header>
-
+ <header>
+    <div class="navbar-wrapper">
+        <nav class="navbar">
+          <img src="images/logo-lumière.png" alt="Lumière Bistro Logo" class="logo-img" />
+          <button id="menu-toggle" aria-label="Open Menu">☰</button>
+          <ul id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="location.html">Location</a></li>
+          </ul>
+        </nav>
+    </div>
+ </header>
+ 
   <main>
     <!-- Hero Section -->
     <section class="hero">
@@ -52,7 +52,7 @@
         <a href="menu.html" class="cta-button">View Menu</a>
       </div>
       <div class="hero-img">
-        <img src="images/restaurant-hero.jpg" alt="Inside Lumière Bistro" loading="lazy" />
+        <img src="images/restaurant-hero.webp" alt="Inside Lumière Bistro (Photo by Paul Griffin of Unsplash)" loading="lazy">
       </div>
     </section>
 

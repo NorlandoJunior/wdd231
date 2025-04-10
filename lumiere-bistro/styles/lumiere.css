@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
   }
+
   
   body {
     font-family: var(--font-body);
@@ -25,12 +26,19 @@
     padding: var(--spacing);
   }
   
+  .navbar-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
   .navbar {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
   }
   
   .navbar ul {
@@ -47,6 +55,12 @@
   
   .navbar a:hover {
     text-decoration: underline;
+  }
+
+  .logo-img {
+    height: 100px;
+    width: 200px;
+    display: block;
   }
   
   .hero {
