@@ -9,6 +9,8 @@ form.addEventListener('submit', function(event) {
     phone: document.getElementById('phone').value,
     email: document.getElementById('email').value,
     location: document.getElementById('location').value,
+    reservationDate: document.getElementById('reservationDate').value,
+    reservationTime: document.getElementById('reservationTime').value,
   };
 
   localStorage.setItem('reservationData', JSON.stringify(data));
@@ -17,7 +19,7 @@ form.addEventListener('submit', function(event) {
 
 function openModal() {
   const modal = document.getElementById('locationModal');
-  modal.style.display = 'flex'; // para centralizar com CSS Flexbox
+  modal.style.display = 'flex';
 }
 
 function closeModal() {

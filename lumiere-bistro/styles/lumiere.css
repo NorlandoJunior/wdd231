@@ -213,7 +213,7 @@
   }
   
   /*About html.*/
-
+  
   .chef-section {
     background-color: #EBEBEB;
     padding: 40px 20px;
@@ -281,11 +281,11 @@
 
   /*Reservation*/
   .modal {
-    display: none; /* Escondido por padrão */
+    display: none;
     position: fixed;
     z-index: 1000;
-    inset: 0; /* shorthand para top: 0; right: 0; bottom: 0; left: 0 */
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro translúcido */
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -312,13 +312,13 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
-    display: none; /* começa invisível */
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 1000;
   }
   
-  /* O conteúdo branco do modal */
+  /* Modal content white page */
   .modal-content {
     background-color: white;
     border-radius: 16px;
