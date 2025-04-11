@@ -16,15 +16,18 @@ form.addEventListener('submit', function(event) {
 });
 
 function openModal() {
-  document.getElementById('locationModal').style.display = 'block';
+  const modal = document.getElementById('locationModal');
+  modal.style.display = 'flex'; // para centralizar com CSS Flexbox
 }
 
 function closeModal() {
-  document.getElementById('locationModal').style.display = 'none';
+  const modal = document.getElementById('locationModal');
+  modal.style.display = 'none';
 }
 
 window.onclick = function(event) {
-  if (event.target == document.getElementById('locationModal')) {
+  const modal = document.getElementById('locationModal');
+  if (event.target === modal) {
     closeModal();
   }
-}
+};
