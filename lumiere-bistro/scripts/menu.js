@@ -15,15 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="menu-info">
             <h3>${item.name}</h3>
             <p>${item.description}</p>
-            <p class="price">${item.price}</p>
           </div>
         `;
 
         menuContainer.appendChild(card);
       });
     } catch (err) {
-      console.error("Erro ao carregar menu:", err);
-      menuContainer.innerHTML = "<p>Erro ao carregar o menu.</p>";
+      console.error("Error to load menu:", err);
+      menuContainer.innerHTML = "<p>Error to load menu.</p>";
     }
   }
 

@@ -16,16 +16,29 @@
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <h1>Lumière Bistro</h1>
-      <button id="menu-toggle">☰</button>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="location.html">Location</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="navbar-wrapper">
+        <nav class="navbar">
+          <img src="images/logo-lumière.png" alt="Lumière Bistro Logo" class="logo-img" />
+          <button id="menu-toggle" aria-label="Open Menu">☰</button>
+          <ul id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+    </div>
+ </header>
+
+ <section class="hero">
+  <div class="hero-text">
+    <h1>Know the menu</h1>
+    <p>When the passion found the flavor.</p>
+  </div>
+  <div class="hero-img">
+    <img src="images/menu-page-hero.webp" alt="Inside Lumière Bistro (Photo by Paul Griffin of Unsplash)" loading="lazy">
+  </div>
+</section>
 
   <main>
     <section class="menu-section">
