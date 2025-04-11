@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu | Lumière Bistro</title>
+  <meta name="description" content="Explore the Lumière Bistro menu - delicious and unique dishes.">
+  <!---Styles-->
+  <link rel="stylesheet" href="styles/lumiere-mobile.css">
+  <link rel="stylesheet" href="styles/lumiere.css">
+  <!---Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+              <img src="images/logo-lumière.png" alt="Lumière Bistro Logo" class="logo-img" />
+              <button id="menu-toggle" aria-label="Open Menu">☰</button>
+              <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </nav>
+        </div>
+     </header>
+
+    <main class="location-container">
+      <h2>Reserve Your Table</h2>
+      <form id="reservationForm">
+        <label>First Name: <input type="text" id="firstName" required></label><br><br>
+        <label>Last Name: <input type="text" id="lastName" required></label><br><br>
+        <label>Phone: <input type="tel" id="phone" required></label><br><br>
+        <label>Email: <input type="email" id="email" required></label><br><br>
+  
+        <label for="location">Choose a location:</label><br><br>
+        <select id="location" required>
+          <option value="">-- Select --</option>
+          <option value="Patio Garden">Patio Garden</option>
+          <option value="Wine Cellar">Wine Cellar</option>
+          <option value="Rooftop Lounge">Rooftop Lounge</option>
+        </select>
+        <button type="button" onclick="openModal()">View Descriptions</button><br><br>
+  
+        <button type="submit">Reserve</button>
+      </form>
+    </main>
+  
+    <!-- Modal -->
+    <div class="modal" id="locationModal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h3>Available Locations</h3>
+      
+          <div class="location-option">
+            <img src="images/patio.jpg" alt="Patio Garden" class="location-img">
+            <strong>🌿 Patio Garden</strong>
+            <p>A charming open-air patio surrounded by olive trees and candlelit tables. Perfect for a romantic night.</p>
+          </div>
+      
+          <div class="location-option">
+            <img src="images/wine-cellar.jpg" alt="Wine Cellar" class="location-img">
+            <strong>🍷 Wine Cellar</strong>
+            <p>An intimate underground space with vintage wine barrels, soft jazz, and private service.</p>
+          </div>
+      
+          <div class="location-option">
+            <img src="images/rooftop.jpg" alt="Rooftop Lounge" class="location-img">
+            <strong>🌇 Rooftop Lounge</strong>
+            <p>A vibrant rooftop spot with a view of the skyline, ideal for sunset dinners and celebrations.</p>
+          </div>
+        </div>
+    </div>
+    
+  <footer>
+    <p>&copy; 2025 Lumière Bistro</p>
+  </footer>
+
+  <script src="scripts/menu.js" type="module"></script>
+  <script src="scripts/reservation.js"></script>
+
+</body>
+</html>
