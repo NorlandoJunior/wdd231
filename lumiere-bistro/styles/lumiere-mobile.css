@@ -13,16 +13,17 @@
   }
 
   /* Menu escondido por padrão */
-.hidden {
-  display: none;
+  #nav-links.hidden {
+    display: none;
+  }
+
+  /* Menu visível quando a classe 'active' é adicionada */
+  #nav-links.active {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-/* Menu visível quando a classe hidden não está presente */
-#nav-links {
-  display: flex;
-  flex-direction: column;
-}
-}
 
 @media (max-width: 768px) {
   #nav-links {
