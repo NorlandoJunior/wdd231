@@ -13,11 +13,11 @@
   }
 
   #nav-links.active {
-    display: flex; /* Mostra o menu quando a classe .active é aplicada */
+    display: flex; 
   }
 
   #menu-toggle {
-    display: block; /* Certifica que o botão está visível no mobile */
+    display: block;
     font-size: 1.5rem;
     background: none;
     border: none;
