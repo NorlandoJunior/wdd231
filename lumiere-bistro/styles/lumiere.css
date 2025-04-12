@@ -401,7 +401,7 @@
   }
 
   /*Thank you*/
-  .location-container {
+  .location-container-thankyou {
     max-width: 600px;
     margin: 60px auto;
     padding: 40px;
@@ -412,20 +412,7 @@
     font-family: 'Raleway', sans-serif;
   }
   
-  .location-container h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    color: #7A5200;
-    margin-bottom: 20px;
-  }
-  
-  .location-container p {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  #reservationSummary {
+ #reservationSummary {
     margin-top: 20px;
   }
   
