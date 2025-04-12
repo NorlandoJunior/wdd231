@@ -57,6 +57,13 @@
     text-decoration: underline;
   }
 
+  #nav-links {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
   .logo-img {
     height: 100px;
     width: 200px;

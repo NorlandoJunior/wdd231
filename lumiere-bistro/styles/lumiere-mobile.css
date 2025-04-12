@@ -12,14 +12,38 @@
     z-index: 999;
   }
 
-  /* Menu escondido por padrão */
-  #nav-links.hidden {
-    display: none;
+  .navbar ul.active {
+    display: flex; 
   }
 
-  /* Menu visível quando a classe 'active' é adicionada */
-  #nav-links.active {
-    display: flex;
-    flex-direction: column;
+  #menu {
+    display: none;
   }
+  
+  #menu.hidden {
+    display: none;
+  }
+  
+  #menu:not(.hidden) {
+    display: block;
+  }
+
+  .hidden {
+  display: none;
 }
+}
+
+  @media (min-width: 768px) {
+    .navbar ul {
+      display: flex !important;
+      position: static;
+      flex-direction: row;
+      background-color: transparent;
+      padding: 0;
+    }
+  
+    #menu-toggle {
+      display: none;
+    }
+  }
+  
