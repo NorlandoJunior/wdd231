@@ -1,12 +1,9 @@
 window.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('nav-links');
-
-  
-  menu.classList.add('hidden');  
+  const navLinks = document.getElementById('nav-links');
 
   menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+    navLinks.classList.toggle('hidden');
   });
 });
   
