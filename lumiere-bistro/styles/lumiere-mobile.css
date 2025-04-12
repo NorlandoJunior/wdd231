@@ -1,6 +1,6 @@
 @media (max-width: 600px) {
   #nav-links {
-    display: none; /* Esconde o menu por padrão */
+    display: none; 
     flex-direction: column;
     gap: 10px;
     background-color: var(--primary-color);

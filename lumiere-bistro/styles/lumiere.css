@@ -46,6 +46,21 @@
     list-style: none;
     gap: var(--spacing);
   }
+
+  #nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+    #nav-links {
+      display: none;
+    }
+  
+    #nav-links.active {
+      display: flex;
+    }
+  }
   
   .navbar a {
     color: white;
