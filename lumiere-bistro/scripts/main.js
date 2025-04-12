@@ -2,17 +2,16 @@
 // import { loadMenu } from './menu.js';
 
 // MENU RESPONSIVO
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleButton = document.querySelector('#menu-toggle');
-  const navList = document.querySelector('.navbar ul');
+window.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
 
-  if (toggleButton && navList) {
-    toggleButton.addEventListener('click', () => {
-      navList.classList.toggle('active');
-    });
-  }
+  // Garante que o menu comece escondido ao carregar
+  menu.classList.add('hidden');
 
-  showLastVisitMessage();
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden'); // Alterna a visibilidade do menu
+  });
 });
   
   function showLastVisitMessage() {
@@ -32,4 +31,3 @@ document.addEventListener('DOMContentLoaded', () => {
   
     localStorage.setItem('lastVisit', now.toString());
   }
-  
