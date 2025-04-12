@@ -262,7 +262,7 @@
   }
   
   section {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   
   .reserve-button {
@@ -352,32 +352,25 @@
     margin-bottom: 2rem;
   }
 
-  form {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 2rem auto;
-    font-family: 'Raleway', sans-serif;
+  .form-group {
+    margin-bottom: 24px;
   }
   
-  form label {
+  .form-group label {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 6px;
     font-weight: bold;
   }
   
-  form input, form select {
+  .form-group input,
+  .form-group select {
     width: 100%;
-    padding: 0.75rem;
-    margin-top: 0.25rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
     font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
   }
-  
+
   form button {
     background-color: #7A5200;
     color: #EBEBEB;
@@ -405,4 +398,63 @@
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 0.5rem;
+  }
+
+  /*Thank you*/
+  .location-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #fdfdfd;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .location-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #7A5200;
+    margin-bottom: 20px;
+  }
+  
+  .location-container p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #reservationSummary {
+    margin-top: 20px;
+  }
+  
+  #reservationDetails {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  #reservationDetails li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+  }
+  
+  .reserve-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #7A5200;
+    color: #EBEBEB;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reserve-button:hover {
+    background-color: #5c3f00;
   }

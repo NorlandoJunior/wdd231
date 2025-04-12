@@ -33,25 +33,47 @@
     <main class="location-container">
       <h2>Reserve Your Table</h2>
       <form id="reservationForm">
-        <label>First Name: <input type="text" id="firstName" required></label><br><br>
-        <label>Last Name: <input type="text" id="lastName" required></label><br><br>
-        <label>Phone: <input type="tel" id="phone" required></label><br><br>
-        <label>Email: <input type="email" id="email" required></label><br><br>
-        <label for="reservationDate">Reservation Date:</label>
-<input type="date" id="reservationDate" name="reservationDate" required>
-
-<label for="reservationTime">Reservation Time:</label>
-<input type="time" id="reservationTime" name="reservationTime" required>
-  
-        <label for="location">Choose a location:</label><br><br>
-        <select id="location" required>
-          <option value="">-- Select --</option>
-          <option value="Patio Garden">Patio Garden</option>
-          <option value="Wine Cellar">Wine Cellar</option>
-          <option value="Rooftop Lounge">Rooftop Lounge</option>
-        </select>
-        <button type="button" onclick="openModal()">View Descriptions</button><br><br>
-  
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="reservationDate">Reservation Date:</label>
+          <input type="date" id="reservationDate" name="reservationDate" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="reservationTime">Reservation Time:</label>
+          <input type="time" id="reservationTime" name="reservationTime" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="location">Choose a location:</label>
+          <select id="location" required>
+            <option value="">-- Select --</option>
+            <option value="Patio Garden">Patio Garden</option>
+            <option value="Wine Cellar">Wine Cellar</option>
+            <option value="Rooftop Lounge">Rooftop Lounge</option>
+          </select>
+          <button type="button" onclick="openModal()">View Descriptions</button>
+        </div>
+    
         <button type="submit">Reserve</button>
       </form>
     </main>
