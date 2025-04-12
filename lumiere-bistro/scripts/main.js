@@ -3,19 +3,18 @@
 
 // MENU RESPONSIVO
 document.addEventListener('DOMContentLoaded', () => {
-    const toggleButton = document.querySelector('#menu-toggle');
-    const navList = document.querySelector('.navbar ul');
+  const toggleButton = document.querySelector('#menu-toggle');
+  const navList = document.querySelector('.navbar ul');
+
+  if (toggleButton && navList) {
+    toggleButton.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  }
+
+  showLastVisitMessage();
+});
   
-    if (toggleButton && navList) {
-      toggleButton.addEventListener('click', () => {
-        navList.classList.toggle('active');
-      });
-    }
-  
-    showLastVisitMessage();
-  });
-  
-  // MENSAGEM COM LOCALSTORAGE
   function showLastVisitMessage() {
     const welcomeMsg = document.querySelector('#welcome-msg');
     if (!welcomeMsg) return;
