@@ -1,16 +1,12 @@
-// Importar módulos (futuramente)
-// import { loadMenu } from './menu.js';
-
-// MENU RESPONSIVO
 window.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
+  const menu = document.getElementById('nav-links');
 
-  // Garante que o menu comece escondido ao carregar
-  menu.classList.add('hidden');
+  
+  menu.classList.add('hidden');  
 
   menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('hidden'); // Alterna a visibilidade do menu
+    menu.classList.toggle('hidden');
   });
 });
   

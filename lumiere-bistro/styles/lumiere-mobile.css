@@ -27,6 +27,10 @@
   #menu:not(.hidden) {
     display: block;
   }
+
+  .hidden {
+    display: none;
+  }
 }
 
   @media (min-width: 768px) {
