@@ -17,7 +17,7 @@
     }
   
     #menu-toggle {
-      display: none; 
+      display: block; 
       font-size: 1.5rem;
       background: none;
       border: none;
