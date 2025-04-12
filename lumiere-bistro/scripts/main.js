@@ -3,8 +3,8 @@
 
 // MENU RESPONSIVO
 document.addEventListener('DOMContentLoaded', () => {
-  const toggleButton = document.querySelector('menu-toggle');
-  const navList = document.querySelector('navbar ul');
+  const toggleButton = document.querySelector('#menu-toggle');
+  const navList = document.querySelector('.navbar ul');
 
   if (toggleButton && navList) {
     toggleButton.addEventListener('click', () => {
