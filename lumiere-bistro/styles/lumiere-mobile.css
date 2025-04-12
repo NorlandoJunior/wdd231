@@ -86,7 +86,7 @@
   .chef-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     padding: 1rem;
   }
 
@@ -95,30 +95,45 @@
   }
 
   .chef-images {
+    display: flex;
+    flex-direction: column;
     order: 2;
-  }
-
-  .chef-text h2 {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-
-  .chef-text p {
-    font-size: 1rem;
-    text-align: justify;
-    line-height: 1.6;
+    gap: 1rem;
+    align-items: center;
   }
 
   .chef-images img {
     width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 360px;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .chef-text h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .chef-text p {
+    font-size: 0.95rem;
+    text-align: justify;
   }
 
   .chef-section {
     padding: 2rem 1rem;
   }
+
+  footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
 }
+
 
 
 
