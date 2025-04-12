@@ -58,10 +58,18 @@
   }
 
   #nav-links {
-    display: none;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+    #nav-links {
+      display: none;
+    }
+  
+    #nav-links.active {
+      display: flex;
+    }
   }
 
   .logo-img {

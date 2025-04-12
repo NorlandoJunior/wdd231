@@ -1,14 +1,13 @@
 @media (max-width: 600px) {
-  @media (max-width: 600px) {
     #nav-links {
-      display: none; /* Esconde o menu por padrão */
+      display: none; 
       flex-direction: column;
       gap: 10px;
       background-color: var(--primary-color);
       position: absolute;
       top: 60px;
       right: 10px;
-      padding: 1rem;
+      padding: 1.5rem 2.5rem;
       border-radius: 8px;
       z-index: 999;
     }
@@ -18,7 +17,7 @@
     }
   
     #menu-toggle {
-      display: block; /* Certifica que o botão está visível no mobile */
+      display: none; 
       font-size: 1.5rem;
       background: none;
       border: none;
@@ -29,15 +28,11 @@
 
   @media (min-width: 768px) {
     .navbar ul {
-      display: flex !important;
-      position: static;
-      flex-direction: row;
-      background-color: transparent;
-      padding: 0;
+      display: flex;
+      gap: 20px;
     }
   
     #menu-toggle {
       display: none;
     }
-  }
-  
+}
