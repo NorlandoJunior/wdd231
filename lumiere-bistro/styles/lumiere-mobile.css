@@ -36,3 +36,47 @@
       display: none;
     }
 }
+
+/*location-mobile*/
+@media (max-width: 600px) {
+  .location-container {
+    padding: 1rem;  /* Ajuste de padding para telas pequenas */
+  }
+
+  /* Ajustando a seção de História */
+  .history h2 {
+    font-size: 1.5rem;  /* Tamanho de fonte menor */
+  }
+
+  .history p {
+    font-size: 1rem;  /* Ajuste do texto para melhor legibilidade */
+  }
+
+
+  .address iframe {
+    width: 100%;  
+    height: 250px;  
+    border-radius: 8px;
+  }
+
+  
+  .history p, .address p {
+    font-size: 0.9rem;
+  }
+
+  
+  .reserve-button {
+    width: 100%;  
+    text-align: center; 
+  }
+
+ 
+  .hero-text {
+    text-align: center;  
+  }
+
+  .hero-img img {
+    width: 100%; 
+    height: auto;  
+  }
+}
