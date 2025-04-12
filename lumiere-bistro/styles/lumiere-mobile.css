@@ -15,6 +15,18 @@
   .navbar ul.active {
     display: flex; 
   }
+
+  #menu {
+    display: none;
+  }
+  
+  #menu.hidden {
+    display: none;
+  }
+  
+  #menu:not(.hidden) {
+    display: block;
+  }
 }
 
   @media (min-width: 768px) {
