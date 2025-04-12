@@ -2,8 +2,11 @@ window.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.getElementById('menu-toggle');
   const navLinks = document.getElementById('nav-links');
 
+  // Verifica se o clique é detectado
   menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    console.log('Menu button clicked');  // Verifica se o botão está sendo clicado
+    navLinks.classList.toggle('active'); // Alterna a classe 'active' no menu
+    console.log(navLinks.classList); // Verifica as classes aplicadas no menu
   });
 });
 

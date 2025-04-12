@@ -23,14 +23,3 @@
     flex-direction: column;
   }
 }
-
-
-@media (max-width: 768px) {
-  #nav-links {
-    display: none;
-  }
-  #nav-links.active {
-    display: flex;
-  }
-}
-  
