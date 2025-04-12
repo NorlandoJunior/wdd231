@@ -1,4 +1,5 @@
 @media (max-width: 600px) {
+  /* Esconde a lista de links do menu por padrão */
   .navbar ul {
     display: none;
     flex-direction: column;
@@ -12,25 +13,20 @@
     z-index: 999;
   }
 
+  /* Mostra a lista quando estiver ativa */
   .navbar ul.active {
-    display: flex; 
+    display: flex;
   }
 
+  /* Mostra o botão de menu hambúrguer */
   #menu {
-    display: none;
-  }
-  
-  #menu.hidden {
-    display: none;
-  }
-  
-  #menu:not(.hidden) {
     display: block;
   }
 
+  /* Classe utilitária para esconder elementos */
   .hidden {
-  display: none;
-}
+    display: none;
+  }
 }
 
   @media (min-width: 768px) {
